@@ -1,0 +1,390 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #2d3748;
+}
+        
+
+.title1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.title2 {
+
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.btn-holder {
+    display: flex;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: rgb(249,250,251);
+}
+
+.btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  box-shadow: none;
+}
+
+.header-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    max-height: 600px;
+    min-height: 600px;
+    align-items: center;
+}
+
+.header-foto .title1{
+    font-size: 40px;
+
+}
+
+.header-foto .title2{
+    font-size: 16px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    flex-wrap: wrap;
+}
+.recipe-card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    min-height: 430px;
+    max-height: 430px;
+    
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-image img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 330px;
+}
+
+.recipe-text {
+    padding: 10px 0 10px 0;
+    gap: 20px;
+}
+
+.recipe-text .title1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 100%;
+    max-height: 60px;
+}
+
+.recipe-text .text {
+    font-size: 16px;
+    color: var(--text-color);
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+}
+
+.alert {
+    background-color: #fefcbf;
+    border-left: 4px solid #ecc94b;
+    color: #b7791f;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.alert .font-semibold {
+    font-weight: 600;
+}
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+    border-radius: 0.5rem;
+}
+table {
+    min-width: 100%;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+th {
+    background-color: #f7fafc;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4a5568;
+    text-transform: uppercase;
+}
+td {
+    color: #2d3748;
+}
+tr:hover {
+    background-color: #f7fafc;
+}
+.view-link {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.view-link:hover {
+    color: #1e40af;
+}
+
+.content-block {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.left img {
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.carousel-indicators li {
+    background-color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(1.5);
+}
+
+.right{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h2 {
+    font-size: 2rem;
+}
+
+.right ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.right ul li i {
+    font-size: 1.2rem;
+    color: #ff7f50;
+}
+
+.rating {
+    font-size: 1.3rem;
+    color: #ffc107; /* geel */
+}
+
+.carousel-inner {
+    height: 400px; /* vaste hoogte */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;;
+}
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 2rem;
+            color: #333;
+        }
+        .form-label {
+            font-weight: 600;
+            color: #444;
+        }
+        .form-control {
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            margin-top: 6px;
+            margin-bottom: 18px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        textarea.form-control {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .btn-primary {
+            background: #ff7f50;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: block;
+            margin: 0 auto;
+        }
+        .btn-primary:hover {
+            background: #ff6333;
+        }
+        .alert-danger {
+            background: #ffe5e5;
+            color: #d8000c;
+            border-radius: 6px;
+            padding: 12px 18px;
+            margin-bottom: 18px;
+            border: 1px solid #f5c6cb;
+        }
+        .alert-danger ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+    
+
+    .imageForm{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 10px #00000014;
+        margin-top: 80px;
+    }
+
+    .image-column {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+            flex-wrap: wrap;
+        margin-right: 2%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 10px 10px #00000029;
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+        height: 190px;
+    }
+
+    .card-body {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .delete-button {
+        background-color: #dc3545;
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .delete-button:hover {
+        background-color: #c82333;
+    }
+    .clearfix {
+        width: 100%;
+    }
+        .clearfix::after {  
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
